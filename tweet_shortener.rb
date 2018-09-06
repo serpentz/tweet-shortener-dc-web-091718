@@ -17,6 +17,7 @@ arr =  string.split(" ").collect do |word|
       when "and"
         return "&"
       else
+        return word
     end
   end.join(" ")
 end
