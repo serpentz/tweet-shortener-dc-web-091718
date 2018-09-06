@@ -1,6 +1,6 @@
 # Write your code here.
 def word_substituter(string)
-  string.split(" ").collect do |word|
+arr =  string.split(" ").collect do |word|
     case word
       when "hello"
         return 'hi'
@@ -9,13 +9,14 @@ def word_substituter(string)
       when "for"||"four"
         return  '4'
       when "be"
-      return  "b"
+        return  "b"
       when "you"
-      return  'u'
+        return  'u'
       when "at"
-      return  "@"
+        return  "@"
       when "and"
-      return    "&"
+        return "&"
+      else
     end
   end.join(" ")
 end
