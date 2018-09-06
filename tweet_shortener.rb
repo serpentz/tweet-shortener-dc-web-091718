@@ -1,6 +1,6 @@
 # Write your code here.
 def word_substituter(string)
-  string.split(" ").map do |word|
+  string.split(" ").collect do |word|
     case word
       when "hello"
         return 'hi'
