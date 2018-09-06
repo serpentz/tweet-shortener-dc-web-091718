@@ -24,7 +24,7 @@ arr = []
 arr.join(" ")
 end
 
-def bulk_tweet_shortener(tweet)
+def selective_tweet_shortener(tweet)
   temp = tweet
   temp.join.size > 140 ? word_substituter(tweet): tweet
 end
