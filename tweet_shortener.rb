@@ -3,19 +3,19 @@ def word_substituter(string)
   string.split(" ").each do |word|
     case word
     when "hello"
-      'hi'
+      return 'hi'
     when ("to"|| "two"||"too")
-      '2'
+      return '2'
     when "for"||"four"
-      '4'
+    return  '4'
     when "be"
-      "b"
+    return  "b"
     when "you"
-      'u'
+    return  'u'
     when "at"
-      "@"
+    return  "@"
     when "and"
-        "&"
+    return    "&"
     end
   end.join(" ")
 end
