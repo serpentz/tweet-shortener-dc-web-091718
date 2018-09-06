@@ -1,23 +1,23 @@
 # Write your code here.
 def word_substituter(string)
-arr =  string.split(" ").collect do |word|
+arr = [] string.split(" ").collect do |word|
     case word
       when "hello"
-        return 'hi'
+        arr<< 'hi'
       when ("to"|| "two"||"too")
-        return '2'
+        arr<<  '2'
       when "for"||"four"
-        return  '4'
+        arr<<   '4'
       when "be"
-        return  "b"
+        arr<<   "b"
       when "you"
-        return  'u'
+        arr<<   'u'
       when "at"
-        return  "@"
+        arr<<   "@"
       when "and"
-        return "&"
+        arr<<  "&"
       else
-        return word
+        arr<<  word
     end
   end.join(" ")
 end
