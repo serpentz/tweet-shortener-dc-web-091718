@@ -16,5 +16,6 @@ def word_substituter(string)
       "@"
     when "and"
         "&"
-    end.join(" ")
+    end
+  end.join(" ")
 end
