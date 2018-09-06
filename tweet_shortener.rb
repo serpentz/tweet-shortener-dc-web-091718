@@ -1,6 +1,6 @@
 # Write your code here.
 def word_substituter(string)
-arr = [] string.split(" ").collect do |word|
+arr = [] string.split(" ").each do |word|
     case word
       when "hello"
         arr<< 'hi'
