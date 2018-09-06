@@ -25,6 +25,5 @@ arr.join(" ")
 end
 
 def selective_tweet_shortener(tweet)
-  temp = tweet
-  temp.join.size > 140 ? word_substituter(tweet): tweet
+  temp.length > 140 ? word_substituter(tweet): tweet
 end
