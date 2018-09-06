@@ -19,5 +19,6 @@ arr = [] string.split(" ").collect do |word|
       else
         arr<<  word
     end
-  end.join(" ")
+  end
+  arr.join(" ")
 end
